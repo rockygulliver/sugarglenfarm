@@ -1,0 +1,75 @@
+/********
+Sugar Glen Farm
+Adaptive Styles
+Written by Erica Dreisbach
+ericadreisbach.com
+*******/
+
+@media screen and (max-device-width: 980px), screen and (max-width: 980px) {
+
+	article, section .table, .post-navigation .table, footer {
+		width: 94%;
+		padding-right: 3%;
+		padding-left: 3%;	
+	}
+	
+	#page > header h1 {
+		font-size: 5em;
+	}
+	
+	#search {
+		width: 100%;
+		clear: both;
+		padding-bottom: 3em;	
+	}
+	
+	aside {
+		width: 47%;	
+	}	
+
+}
+
+
+@media screen and (max-device-height: 960px) and (orientation: portrait) {
+
+	header#masthead {
+		height: 6em; 
+	}
+		
+	#page > header h1 { 
+		font-size: 3em; 
+	}
+	
+}
+
+
+@media screen and (max-device-width: 780px), screen and (max-width: 780px) {
+
+	.logged-in #top-nav {
+		top: 45px;	
+	}
+
+	aside.widget {
+		width: 100%;
+		clear: both;
+		float: none;
+		padding-bottom: 3em;
+		text-align: center;	
+	}
+	
+	#search-2 {
+		text-align: left;	
+	}
+	
+	aside + aside + aside { 
+		padding-bottom: 0;	
+	}
+}
+
+@media screen and (max-device-width: 600px), screen and (max-width: 600px) {
+
+	.logged-in #top-nav {
+		top: 0;	
+	}
+
+}

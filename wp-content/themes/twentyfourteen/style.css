@@ -1,0 +1,365 @@
+/********
+Theme Name: Sugar Glen Farm
+Theme URI: http://sugarglenfarm.com
+Author: Erica Dreisbach
+Author URI: http://ericadreisbach.com
+Description: Clean, green, adaptive.
+Version: 1.0
+*******/
+@font-face {
+  font-family: 'Essays 1743';
+  src: url("css/fonts/essays1743-webfont.eot");
+  src: local("Essays 1743"), url("css/fonts/essays1743-webfont.woff") format("woff"), url("css/fonts/essays1743-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Essays 1743';
+  src: url("css/fonts/essays1743-italic-webfont.eot");
+  src: local("Essays 1743"), url("css/fonts/essays1743-italic-webfont.woff") format("woff"), url("css/fonts/essays1743-italic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url("css/fonts/linlibertine_re-4.7.5-webfont.eot");
+  src: local("Linux Libertine"), url("css/fonts/linlibertine_re-4.7.5-webfont.woff") format("woff"), url("css/fonts/linlibertine_re-4.7.5-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url("css/fonts/linlibertine_bd-4.1.5-webfont.eot");
+  src: local("Linux Libertine"), url("css/fonts/linlibertine_bd-4.1.5-webfont.woff") format("woff"), url("css/fonts/linlibertine_bd-4.1.5-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url("css/fonts/linlibertine_it-4.2.6-webfont.eot");
+  src: local("Linux Libertine"), url("css/fonts/linlibertine_it-4.2.6-webfont.woff") format("woff"), url("css/fonts/linlibertine_it-4.2.6-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Linux Libertine', georgia, 'times new roman', serif; }
+
+body {
+  display: block;
+  font-size: 1.3em;
+  line-height: 1.44;
+  margin: 0 auto; }
+
+input {
+  border: 0;
+  margin-top: .7em;
+  padding: .9em .3em;
+  width: 98%; }
+
+.table,
+.table-cell {
+  width: 100%;
+  height: 100%; }
+
+.table {
+  display: table;
+  margin: 0 auto; }
+
+.table-cell {
+  display: table-cell; }
+
+.table-cell.middle {
+  vertical-align: middle; }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+h1, h2, h3, h4, h5, h6, .post-navigation, #recent-posts-2 ul:after, .pagination.loop-pagination {
+  font-family: 'Essays 1743', garamond, 'times new roman', serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+  padding: 0; }
+
+header, nav, article, section, footer {
+  display: block;
+  position: relative; }
+
+.wrapper {
+  display: block;
+  margin: 0 auto; }
+
+img.center {
+  display: block;
+  margin: 0 auto; }
+
+p.center {
+  text-align: center; }
+
+.inline {
+  display: inline; }
+
+.small {
+  font-size: .77em; }
+
+.entry-meta {
+  padding: .5em 0; }
+
+a {
+  color: #000;
+  text-decoration: none;
+  -moz-transition: all .3s ease-in-out 0s;
+  -webkit-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  -ms-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s; }
+
+a:hover {
+  color: #ff4500;
+  text-decoration: none;
+  -moz-transition: all .1s ease-in-out 0s;
+  -webkit-transition: all .1s ease-in-out 0s;
+  -o-transition: all .1s ease-in-out 0s;
+  -ms-transition: all .1s ease-in-out 0s;
+  transition: all .1s ease-in-out 0s; }
+
+.entry-content a, footer a {
+  border-bottom: 1px dotted #000; }
+
+.entry-content a:hover, footer a:hover {
+  border: none; }
+
+.clear {
+  clear: both; }
+
+.screen-reader-text {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+/**** header ***/
+#page > header {
+  height: 19em;
+  /* background: url('images/hank-header.jpg'); */
+  background-size: cover;
+  background-color: #111;
+  z-index: 10; }
+  #page > header .header-main {
+    max-width: 960px;
+    height: 100%;
+    display: table;
+    margin: 0 auto; }
+  #page > header h1 {
+    height: 100%;
+    display: table-cell;
+    font-size: 6em;
+    text-align: center;
+    text-shadow: 2px 2px 2px #111;
+    vertical-align: middle; }
+  #page > header h1 a {
+    border: 0;
+    color: #fff; }
+
+/***** nav ****/
+#top-nav {
+  width: 100%;
+  height: 3em;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  font-size: .77em;
+  letter-spacing: 1px;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 9; }
+  #top-nav a {
+    border: none; }
+  #top-nav table {
+    width: auto; }
+  #top-nav .table-cell {
+    background: url("images/chicken-icon-44.png") 0.5% 2px no-repeat;
+    padding: 0 .5%; }
+  #top-nav #sugarglen {
+    width: 100%;
+    display: block;
+    padding: .77em 0;
+    position: relative; }
+  #top-nav #about {
+    position: absolute;
+    right: 1%;
+    top: .7em;
+    z-index: 8; }
+  #top-nav #about-icon {
+    display: none; }
+
+.logged-in #top-nav {
+  top: 32px; }
+
+/**** width 760 ****/
+article, .search #main .wrapper, .error404 #main .wrapper, .pagination.loop-pagination {
+  max-width: 760px; }
+
+/*** width 960 ****/
+footer#colophon .wrapper {
+  max-width: 960px; }
+
+/**** article ****/
+#main {
+  padding-top: 3em; }
+
+article {
+  margin: 0 auto; }
+  article h1.entry-title {
+    font-size: 2.4em; }
+  article img {
+    max-width: 100%;
+    height: auto; }
+  article div.wp-caption {
+    width: inherit !important;
+    color: #444;
+    font-style: italic;
+    text-align: center; }
+  article div.wp-caption p {
+    margin-top: 0; }
+  article .author, article article .entry-date {
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  article .edit-link {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-left: 1em; }
+  article .edit-link:before {
+    content: "\2665"; }
+  article .edit-link:hover:before {
+    color: #ff4500; }
+
+article + #comments {
+  display: none; }
+
+article:after {
+  clear: both;
+  content: "\2766";
+  display: block;
+  font-size: 1.88em;
+  padding: 1em 0 2em;
+  text-align: center; }
+
+/**** nav-below ****/
+.post-navigation {
+  background: #a8b755;
+  padding: 3em 0 4em; }
+  .post-navigation .table {
+    max-width: 960px; }
+  .post-navigation a {
+    border: none;
+    display: block;
+    font-size: 1.2em; }
+  .post-navigation a[rel="prev"] {
+    float: left; }
+  .post-navigation a[rel="next"] {
+    float: right; }
+  .post-navigation a[rel="prev"]:before {
+    content: " \AB	"; }
+  .post-navigation a[rel="prev"]:hover:before,
+  .post-navigation a[rel="next"]:hover:after {
+    color: #ff4500; }
+  .post-navigation a[rel="next"]:after {
+    content: " \BB";
+    font-size: 1.44em; }
+
+.pagination.loop-pagination {
+  font-size: 1.1em;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  text-align: center; }
+
+.page-numbers {
+  margin-left: -.4em;
+  padding: 0 .7em .3em; }
+
+.page-numbers.current {
+  background: url("images/page-numbers-bg.png") no-repeat 50% 50%; }
+
+/**** archivist *****/
+.archivist_wrapper table {
+  font-size: .9em;
+  margin: .5em 0; }
+  .archivist_wrapper table h2 {
+    font-size: 1.44em; }
+  .archivist_wrapper table a.permalink.thumbnail, .archivist_wrapper table a.permalink.thumbnail img, .archivist_wrapper table h2 a {
+    border: 0; }
+  .archivist_wrapper table td {
+    padding: 1em .5em; }
+
+/**** search ****/
+.error404 #main .clear,
+.search-no-results .page-content .clear {
+  height: 7em;
+  display: block; }
+
+.search h1.page-title {
+  font-size: 2em; }
+
+#search-3 ::-webkit-input-placeholder {
+  color: transparent; }
+
+#search-3 :-moz-placeholder {
+  /* Firefox 18- */
+  color: transparent; }
+
+#search-3 ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: transparent; }
+
+#search-3 :-ms-input-placeholder {
+  color: #fff; }
+
+#search-3 input[type="submit"] {
+  display: none; }
+
+.search-results .page-header + article {
+  padding-top: 1.44em; }
+
+.search-results article h1.entry-title {
+  font-size: 1.44em; }
+
+.search-results article.page h1 + .entry-meta {
+  padding: 0; }
+
+/**** footer *****/
+footer {
+  background: #7c8b27;
+  font-size: .8em;
+  padding: 2em 0 3em; }
+  footer ul {
+    list-style-type: none;
+    margin: .3em 0 1em;
+    padding: 0; }
+  footer li {
+    padding: .3em 0; }
+  footer h2 {
+    font-size: 1.2em; }
+  footer h4 a, footer h2 a {
+    border: 0; }
+  footer #copyright {
+    font-size: .85em;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    text-transform: uppercase; }
+
+aside.widget {
+  width: 30%;
+  margin-right: 3%;
+  display: block;
+  float: left;
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important; }
